@@ -89,7 +89,10 @@ const build = ({
     if (_.isObject(val) && !(val instanceof Object)) {
       return val;
     }
-
+    console.log("===== HERE =====")
+    console.log('val', val);
+    console.log('typeof val', typeof val);
+    console.log("===== HERE =====")
     // Trouble primitives
     if (_.isNaN(val)) return 'NaN';
     if (val === Infinity) return 'Infinity';
